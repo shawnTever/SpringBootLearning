@@ -40,7 +40,7 @@ public class MapperTests {
     public void testInsertUser() {
         User user = new User();
         user.setUsername("test");
-        user.setPassport("123456");
+        user.setPassword("123456");
         user.setSalt("abc");
         user.setEmail("test@qq.com");
         user.setHeaderUrl("http://www.nowcoder.com/101.png");

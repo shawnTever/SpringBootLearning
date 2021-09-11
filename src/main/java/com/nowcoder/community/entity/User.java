@@ -10,7 +10,7 @@ import java.util.Date;
 public class User {
     private int id;
     private String username;
-    private String passport;
+    private String password;
     private String salt;
     private String email;
     private int type;
@@ -24,7 +24,7 @@ public class User {
         return "User{" +
                 "id=" + id +
                 ", username='" + username + '\'' +
-                ", passport='" + passport + '\'' +
+                ", passport='" + password + '\'' +
                 ", salt='" + salt + '\'' +
                 ", email='" + email + '\'' +
                 ", type=" + type +
