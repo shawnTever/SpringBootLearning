@@ -4,7 +4,7 @@ import java.util.Date;
 
 public class DiscussPost {
     private int id;
-    private int userid;
+    private int userId;
     private String title;
     private String content;
     private int type;
@@ -17,7 +17,7 @@ public class DiscussPost {
     public String toString() {
         return "DiscussPost{" +
                 "id=" + id +
-                ", userid=" + userid +
+                ", userId=" + userId +
                 ", title='" + title + '\'' +
                 ", content='" + content + '\'' +
                 ", type=" + type +
@@ -32,8 +32,8 @@ public class DiscussPost {
         this.id = id;
     }
 
-    public void setUserid(int userid) {
-        this.userid = userid;
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 
     public void setTitle(String title) {
@@ -68,8 +68,8 @@ public class DiscussPost {
         return id;
     }
 
-    public int getUserid() {
-        return userid;
+    public int getUserId() {
+        return userId;
     }
 
     public String getTitle() {
