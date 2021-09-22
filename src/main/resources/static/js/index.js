@@ -16,10 +16,13 @@ function publish() {
 	var title = $("#recipient-name").val();
 	var content = $("#message-text").val();
 	// 发送异步请求(POST)
+	// CONTEXT_PATH + "/discuss/add": 访问路径，项目名
+	// {"title":title,"content":content}: 访问对象
 	$.post(
 	    CONTEXT_PATH + "/discuss/add",
 	    {"title":title,"content":content},
 	    function(data) {
+            // data为网页返回数据，并封装成JSON对象
 	        data = $.parseJSON(data);
 	        // 在提示框中显示返回消息
 	        $("#hintBody").text(data.msg);
