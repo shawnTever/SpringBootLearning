@@ -11,6 +11,7 @@ function send_letter() {
 	$.post(
 	    CONTEXT_PATH + "/letter/send",
 	    {"toName":toName,"content":content},
+//	    浏览器返回的json格式数据
 	    function(data) {
 	        data = $.parseJSON(data);
 	        if(data.code == 0) {
